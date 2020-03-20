@@ -1,5 +1,5 @@
 module.exports = {  
-    outputDir: "../src/main/resources/static",  
+    outputDir: "../dist",  
     indexPath: "../static/index.html",  
     devServer: {  
       port:"8300",
@@ -10,4 +10,4 @@ module.exports = {
       svgRule.uses.clear();    
       svgRule.use("vue-svg-loader").loader("vue-svg-loader");  
     }  
-  };
+};
