@@ -1,6 +1,6 @@
 module.exports = {  
-    outputDir: "../src/main/resources/static",  
-    indexPath: "../static/index.html",  
+    outputDir: "./src/main/resources/static",  
+    indexPath: "./static/index.html",  
     devServer: {  
       port:"8300",
       proxy: "http://localhost:8282"  
