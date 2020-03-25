@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid">    
+    <div class="container-fluid">
         <!--LOGIN START-->
         <div class="row" style="margin-top:150px;">
             <div class="col" style="background-color:#323861;">
@@ -25,7 +25,7 @@
                         </div>
                         <div class="form-group form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="remember"> 아이디 저장                            
+                            <input class="form-check-input" type="checkbox" name="remember"> 아이디 저장
                         </label>
                         </div>
                         <button type="submit" class="btn btn-primary">확인</button>
@@ -38,9 +38,9 @@
         <!--COPYRIGHT GTS-->
         <div class="row">
             <div class="col" >
-                
+
                 <div class="login_copyright_logo">
-                    <img src="/img/logo_longlife.png" alt="">
+                    <img src="@/assets/img/logo_longlife.png" alt="">
                 </div>
             </div>
             <div class="col">
@@ -56,51 +56,16 @@
 </template>
 
 <script>
-import axios from 'axios';
+// import axios from 'axios';
 
-export default{      
-        data(){
-            return {
-            username: '',
-            password: '',
-            message:''
-            }
-        },
-        created(){
-
-        },
-        computed:{
-
-        },
-        beforeRouteEnter(to,from,next){
-
-        },
-        beforeRouteLeave(to,from,next){
-
-        },
-        mounted(){
-          /*  if(this.isAuthenticated == true){
-                this.$router.push('main');
-            }*/
-        },
-        methods:{
-            loginForm(username,password){
-              /*  this.$store.dispatch('LOGIN', {username, password})
-                    .then(() => this.redirect())
-                    .catch(({message}) => this.msg = message)*/
-            },redirect() {
-                   /* const {search} = window.location
-                    const tokens = search.replace(/^\?/, '').split('&')
-                    const {returnPath} = tokens.reduce((qs, tkn) => {
-                        const pair = tkn.split('=')
-                        qs[pair[0]] = decodeURIComponent(pair[1])
-                        return qs
-                    }, {})*/
-
-                    // 리다이렉트 처리
-                    this.$router.push('main')
-            }
-        }    
-
+export default {
+  name: 'Login',
+  data () {
+    return {
+      username: '',
+      password: '',
+      message: ''
     }
+  }
+}
 </script>
