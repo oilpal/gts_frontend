@@ -51,12 +51,14 @@
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 
 <script>
-// import axios from 'axios';
+import { testLogin } from '../../service/login'
+import '@/assets/custom.css'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 export default {
   name: 'Login',
@@ -65,6 +67,13 @@ export default {
       username: '',
       password: '',
       message: ''
+    }
+  },
+  methods: {
+    async loginForm () {
+      const login = await testLogin(this.username, this.password)
+      console.log('login', login)
+      await this.$router.push('/')
     }
   }
 }
