@@ -6,9 +6,9 @@ import axios from 'axios'
 import { BootstrapVue } from 'bootstrap-vue'
 import App from './App.vue'
 import VueCookies from 'vue-cookies'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-import '@/assets/framework/jui-grid-master/jui-grid.classic.css'
-import '@/assets/custom8.css'
+// import 'bootstrap-vue/dist/bootstrap-vue.css'
+// import '@/assets/framework/jui-grid-master/jui-grid.classic.css'
+// import '@/assets/custom8.css'
 
 window.axios = axios
 Vue.prototype.axios = axios
