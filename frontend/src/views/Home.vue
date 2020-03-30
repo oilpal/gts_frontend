@@ -10,9 +10,8 @@
 import $ from 'jquery'
 import '@/assets/framework/bootstrap-4.4.1-dist/css/bootstrap.min.css'
 import '@/assets/framework/jui-grid-master/jui-grid.classic.css'
+import '@/assets/custom.css'
 import '@/assets/framework/chosen_v1.8.7/chosen.css'
-import '@/assets/custom8.css'
-import '@/custom.css'
 import HeaderArea from '@/components/layout/header.vue'
 import FooterArea from '@/components/layout/footer.vue'
 
