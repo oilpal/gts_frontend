@@ -1,42 +1,6 @@
 <template>
   <div>
     <HeaderArea/>
-    <!-- SEARCH Start -->
-  <div class="wrap_search clearfix">
-      <div class="wrap_title">
-          <div class="title">고객정보</div>
-          <div class="history">고객관리 > 회원정보</div>
-      </div>
-      <div class="search_member">
-          <div class="box_search_member">
-              <input type="text" value="이름검색" />
-              <button type="submit" class="btn_search"></button>
-          </div>
-      </div>
-      <div class="search_more">
-          <div class="box_search_more">
-              <select class="select_default">
-                  <option selected>급여종류</option>
-                  <option>주야간보호</option>
-                  <option>방문요양</option>
-                  <option>방문목욕</option>
-              </select>
-          </div>
-          <div class="box_search_more">
-              <input type="text" class="input_default" style="width:97px;" value="2020-01-01" /><button type="button" class="btn_tp_1">달력</button>
-              ~
-              <input type="text" class="input_default" style="width:97px;" value="2020-01-31" /><button type="button" class="btn_tp_1">달력</button>
-          </div>
-          <div class="box_search_more">
-              <select class="select_default" style="width:100%;">
-                  <option selected>센터명</option>
-                  <option>센터명1</option>
-                  <option>센터명2</option>
-              </select>
-          </div>
-      </div>
-  </div>
-<!-- SEARCH End -->
     <router-view/>
     <FooterArea/>
   </div>
@@ -46,7 +10,9 @@
 import $ from 'jquery'
 import '@/assets/framework/bootstrap-4.4.1-dist/css/bootstrap.min.css'
 import '@/assets/framework/jui-grid-master/jui-grid.classic.css'
+import '@/assets/framework/chosen_v1.8.7/chosen.css'
 import '@/assets/custom8.css'
+import '@/custom.css'
 import HeaderArea from '@/components/layout/header.vue'
 import FooterArea from '@/components/layout/footer.vue'
 
@@ -61,7 +27,10 @@ export default {
       { type: 'text/javascript', src: '@/assets/framework/bootstrap-4.4.1-dist/js/popper.min.js', async: true, body: true },
       { type: 'text/javascript', src: '@/assets/framework/bootstrap-4.4.1-dist/js/bootstrap.min.js', async: true, body: true },
       { type: 'text/javascript', src: '@/assets/framework/jui-grid-master/jui-core.js', async: true, body: true },
-      { type: 'text/javascript', src: '@/assets/framework/jui-grid-master/jui-grid.js', async: true, body: true }
+      { type: 'text/javascript', src: '@/assets/framework/jui-grid-master/jui-grid.js', async: true, body: true },
+      { type: 'text/javascript', src: '@/assets/framework/jquery-3.4.1/jquery.min.js', async: true, body: true },
+      { type: 'text/javascript', src: '@/assets/framework/chosen_v1.8.7/chosen.jquery.js', async: true, body: true },
+      { type: 'text/javascript', src: '@/assets/framework/chosen_v1.8.7/init.js', async: true, body: true }
     ]
   },
   mounted () {

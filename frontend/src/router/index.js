@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Login from '../views/login/login.vue'
+import Billing from '../views/Billing.vue'
 import VueCookies from 'vue-cookies'
 
 import { refreshToken } from '../service/login'
@@ -25,6 +26,11 @@ const routes = [
     name: 'Login',
     component: Login,
     meta: { unauthorized: true }
+  },
+  {
+    path: '/billing',
+    name: 'Billing',
+    component: Billing
   }
 ]
 
