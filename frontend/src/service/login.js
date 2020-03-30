@@ -17,8 +17,8 @@ export async function userLogin (iusername, ipassword, iremember) {
       VueCookies.set('rememberId', iusername, '30d')
       VueCookies.set('remember', iremember, '30d')
     } else {
-      VueCookies.delete('rememberId')
-      VueCookies.delete('remember')
+      this.$cookies.remove('rememberId')
+      this.$cookies.remove('remember')
     }
     return token
   } catch (err) {
@@ -29,8 +29,12 @@ export async function userLogin (iusername, ipassword, iremember) {
 export async function refreshToken () {
   try {
     const token = await axios.post('/api/auth/refresh')
-    VueCookies.set('token', token.data.token, '60s')
-    return token
+    if (token.data.token === null) {
+      return null
+    } else {
+      VueCookies.set('token', token.data.token, '600s')
+      return token
+    }
   } catch (err) {
     return err
   }
