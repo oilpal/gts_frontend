@@ -32,7 +32,7 @@
                 <div class="submenu_basic" id="submenu_3">
                     <ul>
                         <li><a href="#">월별 손익계산</a></li>
-                        <li><a href="#">고객 청구현황</a></li>
+                        <li><router-link to="Billing">고객 청구현황</router-link></li>
                         <li><a href="#">본인부담금 수금</a></li>
                         <li><a href="#">공단계좌입금현황</a></li>
                     </ul>
