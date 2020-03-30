@@ -82,10 +82,12 @@ export default {
       $('#content_tab_2').show()
     })
     $('#flip').mouseenter(function () {
-      $('#nav_submenu').slideDown('fast')
+      // $('#nav_submenu').slideDown('fast')
+      $('#nav_submenu').show()
     })
     $('#pc_head').mouseleave(function () {
-      $('#nav_submenu').slideUp('slow')
+      // $('#nav_submenu').slideUp('slow')
+      $('#nav_submenu').hide()
     })
     $('#submenu_1').on('mouseenter', function () {
       $('.flip_li_1 a').addClass('nav_on')
