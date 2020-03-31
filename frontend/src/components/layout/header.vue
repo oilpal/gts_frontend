@@ -19,7 +19,7 @@
             <div class="inner_box nav_inner_box">
                 <div class="submenu_basic" id="submenu_1">
                     <ul>
-                        <li><a href="#">고객정보</a></li>
+                        <li><router-link to="customer">고객정보</router-link></li>
                         <li><a href="#">고객별 서비스</a></li>
                     </ul>
                 </div>

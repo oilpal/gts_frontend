@@ -10,7 +10,7 @@ export async function userLogin (iusername, ipassword, iremember) {
       password: ipassword
     })
     console.log(token.data)
-    VueCookies.set('token', token.data.token, '600s')
+    VueCookies.set('token', token.data.token, '60000s')
     VueCookies.set('refresh_token', token.data.refresh_token, '30d')
     axios.defaults.headers.refresh_token = VueCookies.get('refresh_token')
     if (iremember === 'Y') {
