@@ -53,7 +53,7 @@
 
         <div class="wrap_member_list">
             <!-- JUI Start -->
-            <div id="xtable_1" class="xtable scroll">
+            <div id="xtable1" class="xtable scroll">
                 <table class="table simple headline hover">
                     <colgroup>
                         <col width="30px">
@@ -93,53 +93,6 @@
                     <tbody></tbody>
                 </table>
             </div>
-
-            <!-- <script data-jui="#xtable_1" data-tpl="row" type="text/template">
-                <tr>
-                    <td><!= no !></td>
-                    <td><!= center !></td>
-                    <td><!= name !></td>
-                    <td><!= birth !></td>
-                    <td><!= grade !></td>
-                    <td class="td_price"><!= fee_1 !></td>
-                    <td class="td_price"><!= fee_2 !></td>
-                    <td class="td_price"><!= fee_3 !></td>
-                    <td class="td_price"><!= fee_4 !></td>
-                    <td class="td_price"><!= self_fee !></td>
-                    <td class="td_price"><!= total_fee !></td>
-                    <td class="td_price"><!= salary !></td>
-                    <td class="td_price"><!= total !></td>
-                </tr>
-            </script>
-            <script>
-                jui.ready([ "grid.xtable" ], function(xtable) {
-                    xtable_1 = xtable("#xtable_1", {
-                        fields: [ "no" , "center" , "name" , "birth" , "grade", "fee_1", "fee_2","fee_3","fee_4","self_fee","total_fee","salary", "total" ],
-                        data: [
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"일반(15%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"의료(6%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"일반(15%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"의료(6%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"일반(15%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"의료(6%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"일반(15%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"의료(6%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"일반(15%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"의료(6%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"일반(15%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"의료(6%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"일반(15%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"의료(6%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"일반(15%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"의료(6%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" },
-                            { no: "1", center: "성남센터", name: "홍길동", birth: "2020-02-02", grade:"의료(6%)", fee_1: "1,000", fee_2: "1,000", fee_3: "1,000",  fee_4: "1,000", self_fee: "1,000", total_fee: "1,000", salary: "1,000", total: "1,000" }
-                        ],
-                        resize: true,
-                        sort: true,
-                        width: 900,
-                        scrollWidth: 900
-                    });
-                </script> -->
             <!-- JUI End -->
             <!-- 합계표 -->
             <div class="tbl_total">
@@ -742,3 +695,51 @@
 <!-- CONTENTS End -->
   </div>
 </template>
+<!-- <script data-jui="#xtable1" data-tpl="row" type="text/template">
+<tr>
+  <td><!= no !></td>
+  <td><!= center !></td>
+  <td><!= name !></td>
+  <td><!= birth !></td>
+  <td><!= grade !></td>
+  <td class="td_price"><!= fee_1 !></td>
+  <td class="td_price"><!= fee_2 !></td>
+  <td class="td_price"><!= fee_3 !></td>
+  <td class="td_price"><!= fee_4 !></td>
+  <td class="td_price"><!= self_fee !></td>
+  <td class="td_price"><!= total_fee !></td>
+  <td class="td_price"><!= salary !></td>
+  <td class="td_price"><!= total !></td>
+</tr>
+</script>
+<script>
+import jui from 'jui-grid'
+jui.ready(['grid.xtable'], function (xtable) {
+  xtable1 = xtable('#xtable1', {
+    fields: ['no', 'center', 'name', 'birth', 'grade', 'fee_1', 'fee_2', 'fee_3', 'fee_4', 'self_fee', 'total_fee', 'salary', 'total'],
+    data: [
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '일반(15%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '의료(6%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '일반(15%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '의료(6%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '일반(15%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '의료(6%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '일반(15%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '의료(6%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '일반(15%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '의료(6%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '일반(15%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '의료(6%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '일반(15%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '의료(6%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '일반(15%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '의료(6%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' },
+      { no: '1', center: '성남센터', name: '홍길동', birth: '2020-02-02', grade: '의료(6%)', fee_1: '1,000', fee_2: '1,000', fee_3: '1,000', fee_4: '1,000', self_fee: '1,000', total_fee: '1,000', salary: '1,000', total: '1,000' }
+    ],
+    resize: true,
+    sort: true,
+    width: 900,
+    scrollWidth: 900
+  })
+})
+</script> -->
