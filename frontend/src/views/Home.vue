@@ -33,13 +33,13 @@ export default {
     ]
   },
   mounted () {
-  /*  const recaptchaScript = document.createElement('script')
+    const recaptchaScript = document.createElement('script')
     recaptchaScript.setAttribute('src', '@/assets/framework/bootstrap-4.4.1-dist/js/popper.min.js')
     document.head.appendChild(recaptchaScript)
     recaptchaScript.setAttribute('src', '@/assets/framework/jui-grid-master/jui-core.js')
     document.head.appendChild(recaptchaScript)
     recaptchaScript.setAttribute('src', '@/assets/framework/jui-grid-master/jui-grid.js')
-    document.head.appendChild(recaptchaScript) */
+    document.head.appendChild(recaptchaScript)
     $('#content_tab_2').hide()
     $('.content_tab_1').click(function () {
       $('#content_tab_1').show()

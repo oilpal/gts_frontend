@@ -20,7 +20,14 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    children: [
+      {
+        path: '/billing',
+        name: 'Billing',
+        component: Billing
+      }
+    ]
   },
   {
     path: '/login',

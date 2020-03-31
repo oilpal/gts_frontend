@@ -63,33 +63,20 @@
             </div>
         </div>
     </div>
-    <div class="app">
-        <ul>
-            <li class="app_message">마감이 2일 남았습니다.</li>
-            <!--
-                * 공지사항 아이콘, 마이페이지 아이콘 bootstrap popvoer
-                  data-content 속성에 html로 코드 삽입
-
-                * 공지사항 아이콘 (bell) : 3일전일까지 알림 내용이 있을 경우 아이콘 이미지 변경
-                    - 공지가 없을경우 : icon_app_bell_off.png
-                    - 공지가 있을경우 : icon_app_bell_on.png
-
-                * bootstrap popover document : https://getbootstrap.com/docs/4.4/components/popovers/
-            -->
-            <li class="app_bell"><a href="#" class="app_popover" data-html="true" data-toggle="popover" data-delay="200" data-animation="true"  data-placement="bottom" data-content="<div class='app_mypage_popover'><a href='#'>마감이 2일 남았습니다.</a></div><div class='app_mypage_popover'><a href='#'>공지사항 2건이 있습니다.</a></div>"><img src="@/assets/img/icon_app_bell_on.png" alt=""></a></li>
-            <li class="app_mypage"><a href="#"  class="app_popover" data-html="true" data-delay="200" data-animation="true"  data-placement="bottom" data-content="<div class='app_mypage_popover'><a href='#'>로그아웃</a></div><div class='app_mypage_popover'><a href='#'>정보수정</a></div>"><img src="@/assets/img/icon_app_mypage.png" alt=""></a></li>
-        </ul>
-    </div>
+    <AlarmArea/>
 </div>
 <!-- HEADER End -->
 </template>
 
 <script>
+import AlarmArea from '@/components/layout/alarm.vue'
+
 export default {
   name: 'HeaderArea',
-  components: {},
+  components: {
+    AlarmArea
+  },
   data () {
-    return {}
   },
   mounted () {
   },
