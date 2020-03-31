@@ -17,8 +17,8 @@ export async function userLogin (iusername, ipassword, iremember) {
       VueCookies.set('rememberId', iusername, '30d')
       VueCookies.set('remember', iremember, '30d')
     } else {
-      this.$cookies.remove('rememberId')
-      this.$cookies.remove('remember')
+      VueCookies.remove('rememberId')
+      VueCookies.remove('remember')
     }
     return token
   } catch (err) {
@@ -42,8 +42,8 @@ export async function refreshToken () {
 
 export async function userLogout () {
   try {
-    VueCookies.delete('token')
-    VueCookies.delete('refresh_token')
+    this.$cookies.remove('token')
+    this.$cookies.remove('refresh_token')
     return true
   } catch (err) {
     return err
