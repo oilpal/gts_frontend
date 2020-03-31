@@ -233,8 +233,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=
 .submenu_basic ul li a:hover { color:#323861; }
 
 
-
-
 .app {
     float:right;
 }
@@ -249,7 +247,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=
     color:#fff;
     padding-top:25px;
 }
-.app ul li.app_bell a, .app ul li.app_mypage a {
+.app ul li.app_bell span > a, .app ul li.app_mypage span > a {
     display:inline-block;
     width:40px;
     height:40px;
@@ -260,14 +258,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=
     vertical-align: center;
     padding-top:10px;
 }
-.app ul li.app_bell a:hover, .app ul li.app_mypage a:hover {
-    background-color: #505a97;
-    color:#000;
-}
 
-.app ul li.app_mypage a {
-    padding-top:9px;
-}
 .app_mypage_popover {
     padding:10px;
     border-bottom:1px dotted #e8e8e8;
@@ -277,10 +268,21 @@ filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=
     color:#000;
     font-weight: 700;
     text-decoration: none;
+    width:100px;
 }
 .app_mypage_popover a:hover {
     color:#fd9026;
 } 
+
+.app ul li.app_bell span > a:hover, .app ul li.app_mypage span > a:hover {
+    background-color: #505a97;
+    color:#000;
+}
+
+.app ul li.app_mypage span > a {
+    padding-top:9px;
+}
+
 /* HEADER End */
 
 
