@@ -60,7 +60,7 @@
                     html: true
                     }">
                     <div class="popper">
-                      <div class='app_mypage_popover'><a href='#'>로그아웃</a></div>
+                      <div class='app_mypage_popover'><a href='#' v-on:click="fnUserLogOut">로그아웃</a></div>
                       <div class='app_mypage_popover'><a href='#'>정보수정</a></div>
                     </div>
                     <a href="#" slot="reference"><img src="@/assets/img/icon_app_mypage.png" alt="" ></a>
@@ -74,6 +74,8 @@
 import Popper from 'vue-popperjs'
 import 'vue-popperjs/dist/vue-popper.css'
 import '@/assets/custom.css'
+import { userLogout } from '../../service/login'
+
 export default {
   components: {
     Popper
@@ -81,6 +83,16 @@ export default {
   mounted () {
   },
   methods: {
+    fnUserLogOut: function (event) {
+      const logoutFlag = userLogout()
+      console.log('logoutFlag', logoutFlag)
+      if (logoutFlag) {
+        // this.$router.push('/login')
+        this.$router.go({ name: 'Login' })
+      } else {
+        alert('오류가 발생했습니다.')
+      }
+    }
   }
 }
 </script>

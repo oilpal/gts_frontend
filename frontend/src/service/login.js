@@ -42,8 +42,8 @@ export async function refreshToken () {
 
 export async function userLogout () {
   try {
-    this.$cookies.remove('token')
-    this.$cookies.remove('refresh_token')
+    VueCookies.remove('token')
+    VueCookies.remove('refresh_token')
     return true
   } catch (err) {
     return err
