@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Login from '../views/login/login.vue'
 import Billing from '../views/Billing.vue'
-import Customer from '../views/Customer.vue'
+// import Customer from '../views/Customer.vue'
 import VueCookies from 'vue-cookies'
 
 import { refreshToken } from '../service/login'
@@ -39,12 +39,13 @@ const routes = [
     path: '/billing',
     name: 'Billing',
     component: Billing
-  },
+  }
+  /* ,
   {
     path: '/customer',
     name: 'Customer',
     component: Customer
-  }
+  } */
 ]
 
 const router = new VueRouter({
